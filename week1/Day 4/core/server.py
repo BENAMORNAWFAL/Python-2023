@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 app= Flask(__name__)
 
@@ -13,8 +13,6 @@ def playtimes(number):
 @app.route('/play/<number>/<color>')
 def playcolor(number,color):
    return render_template('index.html',times=int(number),txt_color=color)
-
-
 
 
 
