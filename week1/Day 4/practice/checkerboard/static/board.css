@@ -1,0 +1,23 @@
+*{
+   
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display:flex;
+    flex-direction: column;
+}
+#box1{background-color: black;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}
+#box2{background-color: red;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+}

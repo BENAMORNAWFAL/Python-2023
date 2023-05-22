@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkerboard</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='board.css')}}">
+</head>
+<body>
+    <h1>***Checkerboard***</h1>
+    {%for i in range(times) %}
+    <div class="container">
+        {%for i in range(times2) %}
+        <div class="box">
+            <div id="box1" style="background-color: {{bg_color1}};"></div>
+            <div id="box2" style="background-color: {{bg_color2}};"></div>
+        </div>
+        <div class="box">
+            <div id="box2" style="background-color: {{bg_color2}};"></div>
+            <div id="box1" style="background-color: {{bg_color1}};"></div>
+        </div>
+        {%endfor%}
+    </div>
+    {%endfor%}
+</body>
+</html>
