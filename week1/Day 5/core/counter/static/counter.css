@@ -1,0 +1,20 @@
+*{
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+#buton{
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+}
+#buton1{
+    width: 100px;
+    background-color: rgb(35, 0, 230);
+    color: aliceblue;
+}
+#buton2{
+    width: 100px;
+    background-color: rgb(73, 94, 214);
+    color: aliceblue;
+}
