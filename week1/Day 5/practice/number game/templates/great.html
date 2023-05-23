@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='great.css')}}">
+</head>
+<body>
+    <div class="description">
+        <h1>Welcome to the Great Number Game!</h1>
+        <p>I am thinking of a number between 1 and 100</p>
+        <p>Take a guess!</p> 
+
+        <form id="form" method="post">
+            <p  name="output">
+                {% if session['color']==1 %}
+                <h3 id="output" style="background-color: {{bk_color}}">{{session['output']}}</h3>
+                {%endif%}
+            </p>
+            <input type="integer" name="number" id="number" >
+            <button href="/"   >Submit</button>
+        </form>
+    </div>
+    <script src="static\great.js"></script>
+</body>
+</html>

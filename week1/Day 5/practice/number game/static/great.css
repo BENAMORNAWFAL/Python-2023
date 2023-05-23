@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h1,p,input,button{
+    margin-top: 10px;
+}
+#output{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    border: 2px solid black;
+    /* background-color: #f70000fa; */
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+h3{text-align: center;}
+#form{
+    display: flex;
+    flex-direction: column;
+}
