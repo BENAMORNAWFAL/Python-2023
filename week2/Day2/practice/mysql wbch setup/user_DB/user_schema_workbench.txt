@@ -1,0 +1,28 @@
+insert into users(id,first_name,last_name,email,created_at,updated_at)
+value(1,'nawfal','benamor','technobenamor@gmail.com',now(),now());
+
+insert into users(first_name,last_name,email,created_at,updated_at)
+value('aymen','benamor','aymenbenamor@gmail.com',now(),now());
+insert into users(first_name,last_name,email,created_at,updated_at)
+value('mourad','benamor','mouradbenamor@gmail.com',now(),now());
+
+select * from users;
+
+select * from users
+where users.email='technobenamor@gmail.com';
+
+select * from users
+where id=3;
+
+update users
+set last_name='Pancakes'
+where id=3;
+
+delete from users
+where id=2;
+
+select * from users
+order by first_name;
+
+select * from users
+order by first_name DESC;

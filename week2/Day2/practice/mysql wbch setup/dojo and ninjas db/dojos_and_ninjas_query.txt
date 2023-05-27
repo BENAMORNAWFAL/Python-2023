@@ -1,0 +1,30 @@
+select * from dojos;
+select * from ninjas;
+
+insert into dojos(name,created_at)
+value('ali',now()),('maher',now()),('khalifa',now());
+
+delete from dojos where id=1;
+delete from dojos where id=2;
+delete from dojos where id=3;
+
+insert into dojos(name,created_at)
+value('amer',now()),('ahmed',now()),('mariem',now());
+
+insert into ninjas(first_name,last_name,created_at,dojo_id)
+value('med','salem',now(),4);
+
+insert into ninjas(first_name,last_name,created_at,dojo_id)
+value('hamoud','khalaf',now(),5),('mosaab','benben',now(),5),('jalel','aaaa',now(),5);
+
+insert into ninjas(first_name,last_name,created_at,dojo_id)
+value('michael','bernard',now(),6),('jed','beeee',now(),6),('hala','bbbb',now(),6);
+
+select * from ninjas
+where dojo_id=4;
+
+select * from ninjas
+where dojo_id=6;
+
+select * from ninjas
+where id=7;
