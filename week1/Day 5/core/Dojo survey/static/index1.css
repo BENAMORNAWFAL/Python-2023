@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.page{
+    
+    margin: 10%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}    
+button{
+    width: 50px;
+    background-color: rgb(23, 94, 248);
+}
+
+#name,#location,#language,#comment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
